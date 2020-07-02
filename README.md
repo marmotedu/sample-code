@@ -333,6 +333,8 @@ func queryDatabase() error {
 
 ### 7.2  github.com/marmotedu/sample-code` 错误码实现
 
+**设计规范参考：** [code设计示例](docs/README.md)
+
 `github.com/marmotedu/sample-code` code 码是专门适配于 `github.com/marmotedu/errors` 包的错误码。核心代码位于 `github.com/marmotedu/sample-code/code.go` 文件，该文件创建了，一个 ErrCode 结构体，并实现了 `github.com/marmotedu/errors.Coder` 接口。Coder 接口定义了如下方法：
 
 ```go
